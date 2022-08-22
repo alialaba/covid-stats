@@ -5,9 +5,60 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fbfd;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.app{
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.grid{
+  display: grid;
+  column-gap: 1.4rem;
+  row-gap: 2.6rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+.stats-card{
+  background: #FFFFFF;
+/* Mid */
+
+box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+border-radius: 10px;
+padding: 2rem;
+transition: all 0.2s;
+}
+.stats-card:hover{
+  transform: translateY(10px);
+}
+
+.case{
+  padding: .2rem .4rem;
+  width: 300px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  margin-bottom: .5rem;
+}
+.green{
+  
+  background-color: #00FF00;
+}
+.red{
+  background-color: red;
+}
+.blue{
+  background-color: #0000FF;
+}
+.yellow{
+  background-color: #FFcc00;
 }
